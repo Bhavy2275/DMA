@@ -1,0 +1,112 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Mail, Phone, MapPin, Send } from 'lucide-react';
+
+const Contact = () => {
+    return (
+        <section id="contact" className="py-24 bg-black relative">
+            <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-900/20 rounded-full filter blur-[100px] opacity-20" />
+
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+                    <motion.div
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                    >
+                        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Let's Work Together</h2>
+                        <p className="text-gray-400 text-lg mb-12">
+                            Ready to transform your digital presence? Get in touch with us to discuss your next project.
+                        </p>
+
+                        <div className="space-y-8">
+                            <div className="flex items-start gap-4">
+                                <div className="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center shrink-0 border border-white/10">
+                                    <Mail className="w-5 h-5 text-white" />
+                                </div>
+                                <div>
+                                    <h3 className="text-white font-semibold mb-1">Email Us</h3>
+                                    <a href="mailto:dmamedia@gmail.com" className="text-gray-400 hover:text-white transition-colors">dmamedia@gmail.com</a>
+                                </div>
+                            </div>
+
+                            <div className="flex items-start gap-4">
+                                <div className="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center shrink-0 border border-white/10">
+                                    <Phone className="w-5 h-5 text-white" />
+                                </div>
+                                <div>
+                                    <h3 className="text-white font-semibold mb-1">Call Us</h3>
+                                    <a href="tel:+917019482220" className="text-gray-400 hover:text-white transition-colors">+91 7019482220</a>
+                                </div>
+                            </div>
+
+                            <div className="flex items-start gap-4">
+                                <div className="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center shrink-0 border border-white/10">
+                                    <MapPin className="w-5 h-5 text-white" />
+                                </div>
+                                <div>
+                                    <h3 className="text-white font-semibold mb-1">Visit Us</h3>
+                                    <p className="text-gray-400">Bengaluru, India</p>
+                                </div>
+                            </div>
+                        </div>
+                    </motion.div>
+
+                    <motion.div
+                        initial={{ opacity: 0, x: 50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-md"
+                    >
+                        <form className="space-y-6">
+                            <div>
+                                <label className="block text-sm font-medium text-gray-400 mb-2">Your Name</label>
+                                <input
+                                    type="text"
+                                    className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-white/30 transition-colors"
+                                    placeholder="John Doe"
+                                />
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-gray-400 mb-2">Your Email</label>
+                                <input
+                                    type="email"
+                                    className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-white/30 transition-colors"
+                                    placeholder="john@example.com"
+                                />
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-gray-400 mb-2">Subject</label>
+                                <input
+                                    type="text"
+                                    className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-white/30 transition-colors"
+                                    placeholder="Project Inquiry"
+                                />
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-medium text-gray-400 mb-2">Your Message</label>
+                                <textarea
+                                    rows="4"
+                                    className="w-full bg-black/50 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-white/30 transition-colors resize-none"
+                                    placeholder="Tell us about your project..."
+                                />
+                            </div>
+
+                            <button type="button" className="w-full bg-white text-black font-bold py-4 rounded-lg hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] transition-all duration-300 flex items-center justify-center gap-2">
+                                Send Message
+                                <Send className="w-4 h-4" />
+                            </button>
+                        </form>
+                    </motion.div>
+
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default Contact;
