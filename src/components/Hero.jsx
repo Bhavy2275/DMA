@@ -43,11 +43,17 @@ const Hero = () => {
                     </p>
 
                     <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                        <button className="flex items-center justify-center gap-2 px-8 py-4 bg-white text-black rounded-full font-bold text-lg hover:shadow-[0_0_40px_rgba(255,255,255,0.4)] transition-all duration-300 group z-30 relative">
+                        <button
+                            onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
+                            className="flex items-center justify-center gap-2 px-8 py-4 bg-white text-black rounded-full font-bold text-lg hover:shadow-[0_0_40px_rgba(255,255,255,0.4)] transition-all duration-300 group z-30 relative"
+                        >
                             Get Started
                             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </button>
-                        <button className="px-8 py-4 border border-white/20 text-white rounded-full font-bold text-lg hover:bg-white/10 transition-all duration-300 backdrop-blur-md z-30 relative">
+                        <button
+                            onClick={() => document.getElementById('work').scrollIntoView({ behavior: 'smooth' })}
+                            className="px-8 py-4 border border-white/20 text-white rounded-full font-bold text-lg hover:bg-white/10 transition-all duration-300 backdrop-blur-md z-30 relative"
+                        >
                             View Our Work
                         </button>
                     </div>

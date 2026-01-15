@@ -16,20 +16,20 @@ const Footer = () => {
                     <div>
                         <h3 className="text-white font-semibold mb-4">Services</h3>
                         <ul className="space-y-2">
-                            <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Brand Strategy</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-white transition-colors">SEO & Analytics</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Social Media</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Content Creation</a></li>
+                            <li><a href="#services" className="text-gray-400 hover:text-white transition-colors">Brand Strategy</a></li>
+                            <li><a href="#services" className="text-gray-400 hover:text-white transition-colors">SEO & Analytics</a></li>
+                            <li><a href="#services" className="text-gray-400 hover:text-white transition-colors">Social Media</a></li>
+                            <li><a href="#services" className="text-gray-400 hover:text-white transition-colors">Content Creation</a></li>
                         </ul>
                     </div>
 
                     <div>
                         <h3 className="text-white font-semibold mb-4">Company</h3>
                         <ul className="space-y-2">
-                            <li><a href="#" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Work</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                            <li><a href="#about" className="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                            <li><a href="#work" className="text-gray-400 hover:text-white transition-colors">Work</a></li>
+                            <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                            <li><a href="#privacy" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
                         </ul>
                     </div>
                 </div>
